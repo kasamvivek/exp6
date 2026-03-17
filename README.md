@@ -52,7 +52,8 @@ Response:
 
 ```json
 {
-  "token": "JWT_TOKEN"
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.sample.payload.signature"
+
 }
 ```
 
