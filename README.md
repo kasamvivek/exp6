@@ -1,24 +1,14 @@
 # 🔐 JWT Authentication System (Spring Boot)
 
-## 📌 Project Overview
+## 🚀 Overview
 
-This project demonstrates a **JWT (JSON Web Token) Authentication System** built using **Spring Boot**.
+A secure backend application built using **Spring Boot** that implements **JWT (JSON Web Token) authentication**.
 
-It allows:
+This project demonstrates how to:
 
-* User login
-* Token generation
-* Secure access to protected APIs
-
----
-
-## 🚀 Features
-
-* 🔑 User Authentication using username & password
-* 🪪 JWT Token Generation
-* 🔒 Secure Protected Routes
-* ⚡ Spring Security Integration
-* 🗄️ H2 Database (in-memory)
+* Authenticate users
+* Generate JWT tokens
+* Protect API endpoints
 
 ---
 
@@ -29,18 +19,27 @@ It allows:
 * Spring Security
 * JWT (io.jsonwebtoken)
 * Maven
-* Postman (for testing)
+* Postman
+
+---
+
+## 🔑 Features
+
+* User login authentication
+* JWT token generation
+* Secure protected APIs
+* Stateless authentication
+* H2 database integration
 
 ---
 
 ## 📂 API Endpoints
 
-### 🔹 1. Login API
+### 🔹 Login API
 
-* **URL:** `/auth/login`
-* **Method:** POST
+* **POST** `/auth/login`
 
-#### Request Body:
+Request:
 
 ```json
 {
@@ -49,7 +48,7 @@ It allows:
 }
 ```
 
-#### Response:
+Response:
 
 ```json
 {
@@ -59,18 +58,17 @@ It allows:
 
 ---
 
-### 🔹 2. Protected API
+### 🔹 Protected API
 
-* **URL:** `/protected`
-* **Method:** GET
+* **GET** `/protected`
 
-#### Header:
+Header:
 
 ```
 Authorization: Bearer YOUR_TOKEN
 ```
 
-#### Response:
+Response:
 
 ```
 You accessed a protected route!
@@ -82,47 +80,35 @@ You accessed a protected route!
 
 ### 🔐 Login Page
 
-![Login Page](login-page.png)
+![Login](Screenshots/login-page.png)
 
 ### 🏠 Backend Working
 
-![Home Page](home-page.png)
+![Home](Screenshots/home-page.png)
 
 ### 📤 Login Request (Postman)
 
-![Login Request](login-request-postman.png)
+![Login Request](Screenshots/login-request-postman.png)
 
 ### 🔑 Token Response
 
-![Token Response](token-response.png)
+![Token](Screenshots/token-response.png)
 
-### 🔒 Protected Route Access
+### 🔒 Protected Route
 
-![Protected Route](protected-route.png)
+![Protected](Screenshots/protected-route.png)
 
 ---
 
 ## ⚙️ How to Run
 
-1. Clone the repository
-
-```
-git clone https://github.com/your-username/jwt-auth.git
-```
-
-2. Navigate to project folder
-
-```
-cd jwt-auth
-```
-
-3. Run the project
-
-```
+```bash
+git clone https://github.com/kasamvivek/exp6.git
+cd exp6
 mvn spring-boot:run
 ```
 
-4. Open browser:
+Open:
 
 ```
 http://localhost:8080
@@ -130,17 +116,16 @@ http://localhost:8080
 
 ---
 
-## 🎯 Learning Outcomes
+## 🎯 What I Learned
 
-* Understanding JWT authentication
-* Working with Spring Security
-* Securing REST APIs
-* Using Postman for API testing
+* JWT authentication flow
+* Spring Security configuration
+* API protection techniques
+* Real-world backend structure
 
 ---
 
 ## 👨‍💻 Author
 
-* Your Name
-
----
+Kasam Vivek Reddy
+23BAI70214
